@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+$font: 'Montserrat', sans-serif;
+$yellow: rgba(255, 184, 0, 1);
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+input {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+input::placeholder {
+  color: white;
+}
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button($width, $height, $color, $size-text) {
+  width: $width;
+  height: $height;
+  color: $color;
+  font-size: $size-text;
+  border-radius: 4px;
+  font-weight: 500;
+  border: none;
+}
